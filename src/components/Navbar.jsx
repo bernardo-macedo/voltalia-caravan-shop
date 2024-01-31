@@ -8,11 +8,11 @@ const Navbar = () => {
         <div className="container">
           <Link to={"/"}>
             <a className="navbar-brand" href="">
-              <img src="./public/2020_Logo_Voltalia.png" alt="" width="160" />
+              <img src="./assets/2020_Logo_Voltalia.png" alt="" width="160" />
             </a>
           </Link>
           <a className="navbar-brand" href="">
-            <img src="./public/caravan_logo.png" alt="" width="200" />
+            <img src="./assets/caravan_logo.png" alt="" width="200" />
           </a>
         </div>
       </nav>
