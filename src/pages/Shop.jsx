@@ -41,7 +41,7 @@ const Shop = () => {
           <Products />
           <div className="row">
             <div className="col">
-              <Link to="/caravanshow/checkout">
+              <Link to="/checkout">
                 <button className="btn btn-primary w-100 my-3 p-2">
                   Proceed to checkout
                 </button>
