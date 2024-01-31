@@ -73,7 +73,7 @@ const Checkout = () => {
       <section className="min-vh-100">
         <div className="container mt-4">
           <div className="mb-4">
-            <Link to="/">Back to shop</Link>
+            <Link to="/caravanshow/">Back to shop</Link>
           </div>
           <div className="row">
             <div className="col-md-4 col-12">

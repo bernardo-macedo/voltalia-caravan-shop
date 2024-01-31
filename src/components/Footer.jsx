@@ -10,7 +10,7 @@ const Footer = () => {
             COPYRIGHTS © VOLTALIA. ALL RIGHTS RESERVED
           </div>
           <div className="col-6 text-end">
-            <Link className="link-light" to={"/termsandconditions"}>
+            <Link className="link-light" to={"/caravanshow/termsandconditions"}>
               Terms and Conditions
             </Link>
           </div>
