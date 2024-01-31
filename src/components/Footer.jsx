@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="col-6">
             COPYRIGHTS © VOLTALIA. ALL RIGHTS RESERVED
           </div>
-          <div className="col-6 text-end">
+          <div className="col-6 text-end text-white">
             <a
               href="https://www.voltalia.com/terms-and-conditions"
               target="_blank"
