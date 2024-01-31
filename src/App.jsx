@@ -15,9 +15,12 @@ function App() {
       <ShopContextProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Shop />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/termsandconditions" element={<TermsConditions />} />
+            <Route path="/caravanshow" element={<Shop />} />
+            <Route path="/caravanshow/checkout" element={<Checkout />} />
+            <Route
+              path="/caravanshow/termsandconditions"
+              element={<TermsConditions />}
+            />
           </Routes>
         </BrowserRouter>
       </ShopContextProvider>
