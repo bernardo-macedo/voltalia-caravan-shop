@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,9 +9,13 @@ const Footer = () => {
             COPYRIGHTS © VOLTALIA. ALL RIGHTS RESERVED
           </div>
           <div className="col-6 text-end">
-            <Link className="link-light" to={"/caravanshow/termsandconditions"}>
+            <a
+              href="https://www.voltalia.com/terms-and-conditions"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Terms and Conditions
-            </Link>
+            </a>
           </div>
         </div>
       </div>

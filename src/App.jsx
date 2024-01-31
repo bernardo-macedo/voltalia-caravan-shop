@@ -1,9 +1,7 @@
-import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Shop from "./pages/Shop";
 import Checkout from "./pages/Checkout";
 import TermsConditions from "./pages/TermsConditions";
-import Footer from "./components/Footer";
 
 import "./sass/main.scss";
 import "./App.css";
