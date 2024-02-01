@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import voltaliaLogo from "../assets/imgs/2020_Logo_Voltalia.png";
+import caravanLogo from "../assets/imgs/caravan_logo.png";
 
 const Navbar = () => {
   return (
@@ -8,15 +10,11 @@ const Navbar = () => {
         <div className="container">
           <Link to={"/"}>
             <a className="navbar-brand" href="">
-              <img
-                src="../assets/imgs/2020_Logo_Voltalia.png"
-                alt=""
-                width="160"
-              />
+              <img src={voltaliaLogo} alt="" width="160" />
             </a>
           </Link>
           <a className="navbar-brand" href="">
-            <img src="../assets/imgs/caravan_logo.png" alt="" width="200" />
+            <img src={caravanLogo} alt="" width="200" />
           </a>
         </div>
       </nav>
