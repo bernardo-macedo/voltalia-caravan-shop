@@ -13,7 +13,7 @@ function App() {
       <ShopContextProvider>
         <BrowserRouter>
           <Routes>
-            <Route path="/caravanshow" element={<Shop />} />
+            <Route path="/voltalia-caravan-shop" element={<Shop />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/termsandconditions" element={<TermsConditions />} />
           </Routes>
