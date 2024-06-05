@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import Footer from "../components/Footer";
 
+const serviceID = import.meta.env.VITE_SERVICE_ID;
+const templateID = import.meta.env.VITE_TEMPLATE_ID;
+const userID = import.meta.env.VITE_USER_ID;
+
 const Checkout = () => {
   const { cartItems, getTotalCartAmount } = useContext(ShopContext);
 
@@ -46,24 +50,17 @@ const Checkout = () => {
     }
 
     if (totalAmount > 0 && termsChecked) {
-      emailjs
-        .sendForm(
-          "service_jmcrixh",
-          "template_vl2sz0q",
-          form.current,
-          "4cg136icxIomboZyh"
-        )
-        .then(
-          (result) => {
-            setSuccessMsg("Form submitted successfully!");
-            setErrorMsg(""); // Clear any previous error messages
-            form.current.reset(); // Reset the form fields
-            setTermsChecked(false); // Reset the checkbox
-          },
-          (error) => {
-            setErrorMsg("Failed to submit the form. Please try again later.");
-          }
-        );
+      emailjs.sendForm(serviceID, templateID, form.current, userID).then(
+        (result) => {
+          setSuccessMsg("Form submitted successfully!");
+          setErrorMsg(""); // Clear any previous error messages
+          form.current.reset(); // Reset the form fields
+          setTermsChecked(false); // Reset the checkbox
+        },
+        (error) => {
+          setErrorMsg("Failed to submit the form. Please try again later.");
+        }
+      );
     }
   };
 
